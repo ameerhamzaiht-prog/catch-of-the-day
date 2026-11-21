@@ -1,0 +1,1492 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#092d35">
+  <meta name="description" content="Catch of the Day is a food truck located in Dromderrig, Kinsale, County Cork, Ireland. Contact us on 087 425 4445 or find our location on Google Maps.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Catch of the Day | Food Truck in Kinsale">
+  <meta property="og:description" content="Find Catch of the Day, a food truck in Dromderrig, Kinsale, County Cork. Call 087 425 4445 for enquiries.">
+  <meta property="og:locale" content="en_IE">
+  <title>Catch of the Day | Food Truck in Kinsale, Cork</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #092d35;
+      --deep: #061f26;
+      --teal: #147b78;
+      --mint: #dcece2;
+      --cream: #f8f5ec;
+      --orange: #f3a34b;
+      --white: #ffffff;
+      --text: #203b3d;
+      --muted: #758481;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--text);
+      background: var(--cream);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 44px));
+      margin: auto;
+    }
+
+    .announcement {
+      background: var(--orange);
+      color: var(--deep);
+      text-align: center;
+      padding: 10px 15px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9, 45, 53, .97);
+      backdrop-filter: blur(14px);
+      color: white;
+    }
+
+    .navbar {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .logo-icon {
+      width: 43px;
+      height: 43px;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+    }
+
+    .logo-name {
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .logo-sub {
+      display: block;
+      margin-top: 5px;
+      font-size: 9px;
+      letter-spacing: 2.7px;
+      color: #b7d4ca;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      list-style: none;
+      font-size: 13px;
+      font-weight: 600;
+      color: #d4e1dd;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    .nav-cta {
+      background: var(--orange);
+      color: var(--deep) !important;
+      padding: 12px 21px;
+      border-radius: 3px;
+      font-weight: 800;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 680px;
+      position: relative;
+      background: var(--navy);
+      color: white;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 85% 45%, rgba(36,132,121,.32), transparent 42%),
+        radial-gradient(ellipse at 10% 90%, rgba(243,163,75,.12), transparent 35%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+      z-index: 2;
+      padding-top: 75px;
+      padding-bottom: 85px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 35px;
+      height: 2px;
+      background: var(--orange);
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(54px, 7vw, 88px);
+      line-height: 1.04;
+      letter-spacing: -2px;
+      font-weight: 800;
+      max-width: 650px;
+    }
+
+    h1 span {
+      color: var(--orange);
+      font-style: italic;
+    }
+
+    .hero-description {
+      max-width: 440px;
+      color: #c0d1cd;
+      line-height: 1.9;
+      font-size: 15px;
+      margin: 27px 0 35px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 24px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .6px;
+      transition: .25s ease;
+      border-radius: 3px;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: var(--deep);
+    }
+
+    .btn-primary:hover {
+      background: #ffc174;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.4);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--orange);
+      color: var(--orange);
+    }
+
+    .hero-visual {
+      min-height: 430px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    .visual-circle {
+      position: absolute;
+      width: min(420px, 90%);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.15);
+      background: radial-gradient(circle, rgba(20,123,120,.26), rgba(9,45,53,.1) 70%);
+    }
+
+    .visual-circle::before,
+    .visual-circle::after {
+      content: "";
+      position: absolute;
+      border: 1px dashed rgba(255,255,255,.2);
+      border-radius: 50%;
+      inset: 24px;
+    }
+
+    .visual-circle::after {
+      inset: 55px;
+      border-style: solid;
+      border-color: rgba(243,163,75,.25);
+    }
+
+    .fish-art {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(150px, 22vw, 245px);
+      line-height: 1;
+      filter: drop-shadow(0 25px 25px rgba(0,0,0,.3));
+      transform: rotate(-12deg);
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-12deg); }
+      50% { transform: translateY(-15px) rotate(-7deg); }
+    }
+
+    .floating-label {
+      position: absolute;
+      z-index: 3;
+      background: var(--cream);
+      color: var(--navy);
+      padding: 17px 22px;
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 17px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.2);
+    }
+
+    .label-one {
+      top: 45px;
+      right: 5px;
+      transform: rotate(5deg);
+    }
+
+    .label-two {
+      bottom: 50px;
+      left: 0;
+      transform: rotate(-5deg);
+      background: var(--orange);
+    }
+
+    .hero-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: repeating-linear-gradient(90deg, var(--orange) 0 35px, transparent 35px 70px);
+    }
+
+    /* Highlights */
+
+    .highlights {
+      background: var(--cream);
+      padding: 35px 0;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .highlight {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      padding: 15px 10px;
+      border-right: 1px solid #dddcd2;
+    }
+
+    .highlight:last-child {
+      border: 0;
+    }
+
+    .highlight-icon {
+      font-size: 25px;
+    }
+
+    .highlight strong {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    .highlight small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    /* About */
+
+    .about {
+      padding: 115px 0;
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 85px;
+    }
+
+    .about-art {
+      min-height: 440px;
+      position: relative;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.2), transparent 35%),
+        linear-gradient(145deg, #164d50, #092d35);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .about-art::before {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 50%;
+    }
+
+    .about-art::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border: 1px dashed rgba(255,255,255,.3);
+      border-radius: 50%;
+    }
+
+    .about-art-emoji {
+      font-size: 150px;
+      z-index: 1;
+      filter: drop-shadow(0 20px 20px rgba(0,0,0,.25));
+    }
+
+    .art-caption {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      color: white;
+      z-index: 2;
+      font-family: var(--serif);
+      font-size: 23px;
+    }
+
+    .section-tag {
+      color: var(--teal);
+      font-size: 11px;
+      letter-spacing: 3px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      color: var(--navy);
+      font-size: clamp(37px, 4.5vw, 54px);
+      line-height: 1.16;
+      letter-spacing: -1px;
+    }
+
+    .about-copy p {
+      font-size: 14px;
+      line-height: 2;
+      color: #6d7d78;
+      margin-top: 23px;
+    }
+
+    .about-note {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      border-left: 3px solid var(--orange);
+      padding: 14px 18px;
+      margin-top: 28px;
+      background: var(--cream);
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    /* Experience */
+
+    .experience {
+      padding: 105px 0;
+      background: var(--mint);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 55px;
+    }
+
+    .section-heading p {
+      color: #6d817b;
+      font-size: 14px;
+      line-height: 1.8;
+      margin-top: 17px;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .experience-card {
+      background: var(--cream);
+      padding: 35px 27px;
+      min-height: 225px;
+      border-bottom: 3px solid transparent;
+      transition: .3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-7px);
+      border-color: var(--orange);
+    }
+
+    .experience-card .icon {
+      font-size: 32px;
+      margin-bottom: 22px;
+      display: block;
+    }
+
+    .experience-card h3 {
+      font-family: var(--serif);
+      color: var(--navy);
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .experience-card p {
+      color: #75847e;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* Visual gallery */
+
+    .gallery {
+      background: var(--deep);
+      padding: 105px 0;
+      color: white;
+    }
+
+    .gallery .section-heading h2 {
+      color: white;
+    }
+
+    .gallery .section-heading p {
+      color: #b5c9c2;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      grid-template-rows: 210px 210px;
+      gap: 14px;
+    }
+
+    .gallery-tile {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #16575a, #0d343b);
+    }
+
+    .gallery-tile:first-child {
+      grid-row: span 2;
+      background: linear-gradient(145deg, #205e59, #092d35);
+    }
+
+    .gallery-tile:nth-child(2) {
+      background: linear-gradient(145deg, #9d6939, #5d3b26);
+    }
+
+    .gallery-tile:nth-child(3) {
+      background: linear-gradient(145deg, #40746e, #1b4548);
+    }
+
+    .gallery-tile:nth-child(4) {
+      background: linear-gradient(145deg, #a77a43, #553e29);
+    }
+
+    .gallery-tile:nth-child(5) {
+      background: linear-gradient(145deg, #21535b, #102d34);
+    }
+
+    .gallery-tile::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, transparent 10%, rgba(0,0,0,.15));
+    }
+
+    .gallery-symbol {
+      font-size: clamp(55px, 8vw, 105px);
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 12px 12px rgba(0,0,0,.25));
+      transition: .4s;
+    }
+
+    .gallery-tile:hover .gallery-symbol {
+      transform: scale(1.12) rotate(-5deg);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 17px;
+      left: 20px;
+      color: white;
+      z-index: 2;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    /* Location */
+
+    .location {
+      padding: 110px 0;
+      background: var(--cream);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .location-copy p {
+      color: #75847e;
+      line-height: 1.9;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .location-detail {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-top: 27px;
+    }
+
+    .location-detail-icon {
+      background: var(--mint);
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-size: 20px;
+    }
+
+    .location-detail strong {
+      color: var(--navy);
+      font-size: 13px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .location-detail span {
+      font-size: 13px;
+      color: #78847f;
+      line-height: 1.7;
+    }
+
+    .map-panel {
+      background: #dce9df;
+      min-height: 380px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background-image:
+        linear-gradient(30deg, transparent 48%, rgba(255,255,255,.45) 49%, rgba(255,255,255,.45) 51%, transparent 52%),
+        linear-gradient(120deg, transparent 48%, rgba(255,255,255,.4) 49%, rgba(255,255,255,.4) 51%, transparent 52%);
+      background-size: 90px 90px;
+    }
+
+    .map-panel::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(20,123,120,.12);
+      border: 1px solid rgba(20,123,120,.16);
+    }
+
+    .map-marker {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .map-marker-icon {
+      background: var(--orange);
+      color: var(--deep);
+      width: 75px;
+      height: 75px;
+      border-radius: 50% 50% 50% 5px;
+      transform: rotate(-45deg);
+      display: grid;
+      place-items: center;
+      margin: auto auto 22px;
+      box-shadow: 0 10px 30px rgba(9,45,53,.2);
+    }
+
+    .map-marker-icon span {
+      transform: rotate(45deg);
+      font-size: 31px;
+    }
+
+    .map-marker strong {
+      color: var(--navy);
+      background: white;
+      padding: 13px 20px;
+      font-family: var(--serif);
+      font-size: 19px;
+      box-shadow: 0 8px 20px rgba(9,45,53,.1);
+    }
+
+    /* Contact */
+
+    .contact {
+      padding: 95px 0;
+      background: var(--teal);
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: "✦";
+      position: absolute;
+      font-size: 250px;
+      color: rgba(255,255,255,.05);
+      top: -110px;
+      left: -40px;
+    }
+
+    .contact .section-tag {
+      color: var(--orange);
+    }
+
+    .contact h2 {
+      color: white;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .contact p {
+      color: #d3e6df;
+      font-size: 14px;
+      margin: 22px auto 32px;
+      max-width: 470px;
+      line-height: 1.9;
+    }
+
+    .contact .btn {
+      margin: 5px;
+    }
+
+    .contact .btn-outline {
+      border-color: rgba(255,255,255,.55);
+    }
+
+    /* Footer */
+
+    footer {
+      background: var(--deep);
+      color: #c1d2cc;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 45px;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.9;
+      margin-top: 18px;
+      max-width: 300px;
+      color: #91aaa2;
+    }
+
+    footer h3 {
+      color: white;
+      font-family: var(--serif);
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 13px;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--orange);
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      color: #829c93;
+      font-size: 11px;
+    }
+
+    .copyright a {
+      color: var(--orange);
+    }
+
+    .mobile-call {
+      display: none;
+    }
+
+    /* Animations */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Responsive */
+
+    @media (max-width: 850px) {
+      .nav-links {
+        gap: 17px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-visual {
+        min-height: 350px;
+      }
+
+      .about-grid {
+        gap: 40px;
+      }
+
+      .location-grid {
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        width: min(100% - 36px, 500px);
+      }
+
+      .announcement {
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+
+      .navbar {
+        height: 68px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 68px;
+        width: 100%;
+        background: var(--deep);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 22px 25px;
+        gap: 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li a {
+        display: block;
+        padding: 15px 5px;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+      }
+
+      .nav-links .nav-cta {
+        margin-top: 12px;
+        text-align: center;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 45px;
+        gap: 5px;
+      }
+
+      .hero .eyebrow {
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: clamp(53px, 14vw, 75px);
+        margin: auto;
+      }
+
+      .hero-description {
+        margin: 23px auto 28px;
+        font-size: 14px;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        min-height: 310px;
+      }
+
+      .visual-circle {
+        width: 280px;
+      }
+
+      .fish-art {
+        font-size: 165px;
+      }
+
+      .label-one {
+        right: 0;
+        top: 30px;
+      }
+
+      .label-two {
+        left: 0;
+        bottom: 20px;
+      }
+
+      .highlights {
+        padding: 18px 0;
+      }
+
+      .highlight-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .highlight {
+        justify-content: flex-start;
+        padding: 13px 5px;
+        border-right: 0;
+        border-bottom: 1px solid #dddcd2;
+      }
+
+      .highlight:last-child {
+        border: 0;
+      }
+
+      .about, .experience, .gallery, .location {
+        padding: 75px 0;
+      }
+
+      .about-grid, .location-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .about-art {
+        min-height: 320px;
+      }
+
+      .about-art-emoji {
+        font-size: 120px;
+      }
+
+      h2 {
+        font-size: 39px;
+      }
+
+      .experience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-card {
+        min-height: 0;
+        padding: 28px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 160px 160px;
+      }
+
+      .gallery-tile:first-child {
+        grid-column: span 2;
+        grid-row: auto;
+      }
+
+      .gallery-symbol {
+        font-size: 65px;
+      }
+
+      .map-panel {
+        min-height: 300px;
+      }
+
+      .contact {
+        padding: 75px 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+      }
+
+      .footer-brand {
+        grid-column: span 2;
+      }
+
+      .copyright {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .mobile-call {
+        display: flex;
+        position: fixed;
+        z-index: 90;
+        bottom: 14px;
+        left: 15px;
+        right: 15px;
+        background: var(--orange);
+        color: var(--deep);
+        height: 52px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 13px;
+        font-weight: 800;
+        border-radius: 4px;
+        box-shadow: 0 5px 25px rgba(0,0,0,.25);
+      }
+
+      footer {
+        padding-bottom: 95px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Catch of the Day",
+    "telephone": "+353874254445",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "MFVC+RG, Dromderrig",
+      "addressLocality": "Kinsale",
+      "addressRegion": "County Cork",
+      "addressCountry": "IE"
+    },
+    "hasMap": "https://maps.google.com/?cid=4581431312974512513&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="announcement">
+    Catch of the Day · Dromderrig · Kinsale, County Cork
+  </div>
+
+  <header>
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Catch of the Day home">
+        <div class="logo-icon">🐟</div>
+        <div>
+          <div class="logo-name">Catch of the Day</div>
+          <span class="logo-sub">Food Truck · Kinsale</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Discover</a></li>
+        <li><a href="#location">Find Us</a></li>
+        <li><a href="#contact" class="nav-cta">Get In Touch ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">A Food Truck in Kinsale</div>
+          <h1>Good food.<br>Fresh <span>vibes.</span></h1>
+          <p class="hero-description">
+            Welcome to Catch of the Day, a local food truck in Dromderrig, Kinsale. Discover our location and get in touch directly.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#location" class="btn btn-primary">FIND OUR LOCATION ↗</a>
+            <a href="tel:+353874254445" class="btn btn-outline">☎ CALL US</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Decorative seafood illustration">
+          <div class="visual-circle"></div>
+          <div class="fish-art" aria-hidden="true">🐟</div>
+          <div class="floating-label label-one">Catch the flavour!</div>
+          <div class="floating-label label-two">Hello, Kinsale!</div>
+        </div>
+      </div>
+      <div class="hero-bottom"></div>
+    </section>
+
+    <section class="highlights" aria-label="Business information">
+      <div class="container highlight-grid">
+        <div class="highlight">
+          <span class="highlight-icon">📍</span>
+          <div>
+            <strong>Located in Kinsale</strong>
+            <small>Dromderrig, County Cork</small>
+          </div>
+        </div>
+
+        <div class="highlight">
+          <span class="highlight-icon">🚚</span>
+          <div>
+            <strong>Food Truck</strong>
+            <small>Catch of the Day</small>
+          </div>
+        </div>
+
+        <div class="highlight">
+          <span class="highlight-icon">☎️</span>
+          <div>
+            <strong>Give Us a Call</strong>
+            <small>087 425 4445</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-art reveal">
+          <div class="about-art-emoji" aria-hidden="true">🐠</div>
+          <div class="art-caption">A little taste of Kinsale.</div>
+        </div>
+
+        <div class="about-copy reveal">
+          <div class="section-tag">Welcome to Catch of the Day</div>
+          <h2>Your local food truck in Kinsale.</h2>
+
+          <p>
+            Looking for Catch of the Day? You'll find us in Dromderrig, Kinsale, County Cork.
+          </p>
+
+          <p>
+            We're a food truck bringing a convenient local food stop to the Kinsale area. Whether you're nearby or exploring the area, we're easy to find using our location details.
+          </p>
+
+          <div class="about-note">
+            <span>📍</span>
+            <span>Find us at MFVC+RG, Dromderrig, Kinsale, Co. Cork, Ireland.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-tag">The Catch of the Day Experience</div>
+          <h2>Good things happen around good food.</h2>
+          <p>
+            Discover Catch of the Day in Kinsale and connect with us directly for information.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <span class="icon" aria-hidden="true">🚚</span>
+            <h3>Food Truck</h3>
+            <p>
+              Find Catch of the Day at its location in Dromderrig, Kinsale.
+            </p>
+          </article>
+
+          <article class="experience-card reveal">
+            <span class="icon" aria-hidden="true">📍</span>
+            <h3>Easy to Find</h3>
+            <p>
+              Use our Google Maps location to plan your visit and find your way to us.
+            </p>
+          </article>
+
+          <article class="experience-card reveal">
+            <span class="icon" aria-hidden="true">📞</span>
+            <h3>Get in Touch</h3>
+            <p>
+              Have a question? Give us a call and speak with us directly.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Food truck visual showcase">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-tag">A Taste of the Good Life</div>
+          <h2>Discover the food truck spirit.</h2>
+          <p>
+            A little visual inspiration celebrating food, the outdoors and the coastal character of Kinsale.
+          </p>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <div class="gallery-tile">
+            <span class="gallery-symbol" aria-hidden="true">🐟</span>
+            <span class="gallery-caption">Catch of the Day</span>
+          </div>
+
+          <div class="gallery-tile">
+            <span class="gallery-symbol" aria-hidden="true">🍋</span>
+            <span class="gallery-caption">Fresh Inspiration</span>
+          </div>
+
+          <div class="gallery-tile">
+            <span class="gallery-symbol" aria-hidden="true">🌊</span>
+            <span class="gallery-caption">Coastal Spirit</span>
+          </div>
+
+          <div class="gallery-tile">
+            <span class="gallery-symbol" aria-hidden="true">🍽️</span>
+            <span class="gallery-caption">Food & Flavour</span>
+          </div>
+
+          <div class="gallery-tile">
+            <span class="gallery-symbol" aria-hidden="true">☀️</span>
+            <span class="gallery-caption">Kinsale Days</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="container location-grid">
+        <div class="location-copy reveal">
+          <div class="section-tag">Come Find Us</div>
+          <h2>We're in Kinsale, Cork.</h2>
+
+          <p>
+            Planning to visit Catch of the Day? Use the address and Google Maps directions below to locate our food truck.
+          </p>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">📍</div>
+            <div>
+              <strong>Our Location</strong>
+              <span>MFVC+RG, Dromderrig,<br>Kinsale, Co. Cork, Ireland</span>
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">☎️</div>
+            <div>
+              <strong>Phone</strong>
+              <span><a href="tel:+353874254445">087 425 4445</a></span>
+            </div>
+          </div>
+
+          <a
+            href="https://maps.google.com/?cid=4581431312974512513&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            style="margin-top:32px"
+          >
+            GET DIRECTIONS ↗
+          </a>
+        </div>
+
+        <a
+          class="map-panel reveal"
+          href="https://maps.google.com/?cid=4581431312974512513&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open Catch of the Day location in Google Maps"
+        >
+          <div class="map-marker">
+            <div class="map-marker-icon"><span>📍</span></div>
+            <strong>Catch of the Day</strong>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container reveal">
+        <div class="section-tag">Let's Connect</div>
+        <h2>Have a question? Give us a call.</h2>
+        <p>
+          Want to find out more about Catch of the Day? Get in touch directly or find our location in Kinsale.
+        </p>
+
+        <a href="tel:+353874254445" class="btn btn-primary">
+          ☎ CALL 087 425 4445
+        </a>
+
+        <a
+          href="https://maps.google.com/?cid=4581431312974512513&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          FIND US ON MAPS ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon">🐟</div>
+            <div>
+              <div class="logo-name">Catch of the Day</div>
+              <span class="logo-sub">Food Truck · Kinsale</span>
+            </div>
+          </a>
+
+          <p>
+            Catch of the Day is a food truck located in Dromderrig, Kinsale, County Cork, Ireland.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#experience">Discover</a></li>
+            <li><a href="#location">Find Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+353874254445">087 425 4445</a></li>
+            <li><a href="#location">Dromderrig, Kinsale</a></li>
+            <li>
+              <a
+                href="https://maps.google.com/?cid=4581431312974512513&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Google Maps ↗</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span>© <span id="year"></span> Catch of the Day. All rights reserved.</span>
+        <span>Made with care in Ireland 🇮🇪</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+353874254445" class="mobile-call">
+    ☎ CALL CATCH OF THE DAY
+  </a>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      });
+    });
+
+    // Reveal animations
+    const revealElements = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealElements.forEach(element => observer.observe(element));
+    } else {
+      revealElements.forEach(element => element.classList.add('visible'));
+    }
+
+    // Dynamic copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
